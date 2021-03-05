@@ -3,12 +3,13 @@
 namespace Alura\DesignPattern;
 
 use Alura\DesignPattern\EstadosOrcamento\EmAprovacao;
+use Alura\DesignPattern\EstadosOrcamento\EstadoOrcamento;
 
 class Orcamento
 {
     public int $quantidadeItens;
     public float $valor;
-    public EstadosOrcamento $estadoAtual;
+    public EstadoOrcamento $estadoAtual;
 
     public function __construct()
     {
